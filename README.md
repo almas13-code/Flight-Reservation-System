@@ -7,7 +7,7 @@ A modern, full-stack database-driven airline booking application built with **PH
 ## Technical Stack
 
 - **Backend:** PHP
-- **Database:** MySQL / MariaDB (Structured Relational Database with Triggers)
+- **Database:** MySQL (Structured Relational Database with Triggers)
 - **Frontend:** HTML5, Vanilla CSS3 (Custom Design System, Responsive Layouts)
 - **Web Server & Environment:** Apache (XAMPP / Local Web Server)
 
