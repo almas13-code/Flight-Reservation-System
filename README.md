@@ -94,6 +94,7 @@ SkyReserve
 ├── logout.php               # Session termination script
 ├── style.css                # Custom CSS design system
 ├── skyreserve.sql           # Complete database DDL & seed data
+├── er_diagram.png           # Entity Relationship Diagram (ER)
 │
 ├── screenshots/             # Interface previews for documentation
 │   ├── home.png
