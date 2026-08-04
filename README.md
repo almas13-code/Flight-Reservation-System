@@ -15,54 +15,24 @@ The **SkyReserve** system automates airline schedule management, user registrati
 
 ---
 
-## Quick Start (Run in 1 Command with Docker)
-
-No PHP installation, MySQL configuration, or manual imports required!
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/almassiju36/SkyReserve.git
-cd SkyReserve
-
-# 2. Start application container
-docker-compose up -d
-```
-
-Open your browser and navigate to: **`http://localhost:8080`**
-
----
-
-## Alternative Setup (XAMPP / Local Server)
+## Setup Instructions (XAMPP / Local Server)
 
 ### Prerequisites
 - **XAMPP / WAMP / MAMP** (PHP 7.4+ or PHP 8.x, MySQL 5.7+ or MySQL 8.x)
 - Web browser (Chrome, Firefox, Edge, Safari)
 
-### Step 1: Local Setup & File Placement
-1. Clone or extract the project into your local server root:
-   - **XAMPP (Windows):** `C:\xampp\htdocs\SkyReserve`
-   - **XAMPP (macOS):** `/Applications/XAMPP/htdocs/SkyReserve`
+### Step 1: File Placement
+Place the project folder into your local server root:
+- **XAMPP (Windows):** `C:\xampp\htdocs\SkyReserve`
+- **XAMPP (macOS):** `/Applications/XAMPP/htdocs/SkyReserve`
 
 ### Step 2: Database Setup
 1. Start **Apache** and **MySQL** in your XAMPP Control Panel.
-2. Open phpMyAdmin at `http://localhost/phpmyadmin`.
+2. Open phpMyAdmin at **`http://localhost/phpmyadmin`**.
 3. Create a new database named **`skyreserve`**.
-4. Click **Import** and select the **`skyreserve.sql`** file from the project folder.
+4. Click **Import** and select **`skyreserve.sql`** from the project folder.
 
-### Step 3: Environment Configuration (Optional)
-Copy `.env.example` to `.env` or configure database variables directly in `config.php`:
-```bash
-cp .env.example .env
-```
-Default connection parameters in `config.php`:
-```php
-$host     = getenv('DB_HOST') ?: "localhost";
-$username = getenv('DB_USER') ?: "root";
-$password = getenv('DB_PASS') !== false ? getenv('DB_PASS') : "";
-$database = getenv('DB_NAME') ?: "skyreserve";
-```
-
-### Step 4: Run Application
+### Step 3: Run Application
 Open your browser and visit:
 ```text
 http://localhost/SkyReserve/
@@ -86,8 +56,6 @@ http://localhost/SkyReserve/
 SkyReserve
 ├── .env.example             # Template for environment variables
 ├── .gitignore               # Excluded files for git repository
-├── Dockerfile               # Apache + PHP 8 container configuration
-├── docker-compose.yml       # Multi-container orchestration (PHP + MySQL)
 ├── config.php               # Database connection configuration
 ├── index.php                # Homepage & flight search widget
 ├── flights.php              # Available flights listing & filter
