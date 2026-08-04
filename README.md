@@ -1,38 +1,43 @@
 # SkyReserve
 
-> A modern, full-stack database-driven web application for flight schedule management, real-time fare browsing, user authentication, and instant seat booking built with **PHP 8**, **MySQL 8**, and **Vanilla CSS**.
+A modern, full-stack database-driven airline booking application built with **PHP**, **MySQL**, and **Vanilla CSS**.
 
 ---
 
-## Abstract
+## 📥 What to Download
 
-The **SkyReserve** system automates airline schedule management, user registration, seat availability tracking, and booking processing. Built on relational database principles, the project showcases core and advanced Database Systems (DBMS) features including:
-- **3NF Relational Database Schema**
-- **Automated MySQL Triggers** (real-time seat deduction & integrity checks)
-- **Database Views & Stored Procedures**
-- **Deterministic MySQL Functions**
-- **Modern Responsive Dark-Theme UI**
+Before running the project, make sure you have:
+1. **XAMPP** (includes Apache, PHP, and MySQL) — [Download XAMPP](https://www.apachefriends.org/)
+2. Any web browser (Chrome, Edge, Firefox, etc.)
 
 ---
 
-## Setup Instructions (XAMPP / Local Server)
+## 🚀 Step-by-Step Setup Guide
 
-### Prerequisites
-- **XAMPP / WAMP / MAMP** (PHP 7.4+ or PHP 8.x, MySQL 5.7+ or MySQL 8.x)
-- Web browser (Chrome, Firefox, Edge, Safari)
+### Step 1: Copy Project Folder
+Move or clone the **`SkyReserve`** project folder into your local XAMPP web server directory:
+- **Windows:** `C:\xampp\htdocs\SkyReserve`
+- **macOS:** `/Applications/XAMPP/htdocs/SkyReserve`
 
-### Step 1: File Placement
-Place the project folder into your local server root:
-- **XAMPP (Windows):** `C:\xampp\htdocs\SkyReserve`
-- **XAMPP (macOS):** `/Applications/XAMPP/htdocs/SkyReserve`
+---
 
-### Step 2: Database Setup
-1. Start **Apache** and **MySQL** in your XAMPP Control Panel.
-2. Open phpMyAdmin at **`http://localhost/phpmyadmin`**.
-3. Create a new database named **`skyreserve`**.
-4. Click **Import** and select **`skyreserve.sql`** from the project folder.
+### Step 2: Start Apache & MySQL
+1. Open **XAMPP Control Panel**.
+2. Click **Start** next to **Apache**.
+3. Click **Start** next to **MySQL**.
 
-### Step 3: Run Application
+---
+
+### Step 3: Create & Import Database
+1. Open your web browser and go to: `http://localhost/phpmyadmin`
+2. Click **New** on the left menu and create a database named **`skyreserve`**.
+3. Select the **`skyreserve`** database.
+4. Click the **Import** tab at the top.
+5. Click **Choose File**, select **`skyreserve.sql`** from the project folder, and click **Import** (or **Go**).
+
+---
+
+### Step 4: Open Application
 Open your browser and visit:
 ```text
 http://localhost/SkyReserve/
@@ -40,46 +45,17 @@ http://localhost/SkyReserve/
 
 ---
 
-## Key Features
+## ✨ Key Features
 
-- **Flight Browsing & Filtering:** Filter live schedules by departure/arrival city with instant result counts.
-- **User Authentication:** Secure registration and login session management.
-- **Instant Booking:** Real-time seat availability verification, dynamic price calculation, and payment method selection.
-- **Booking History:** Interactive user dashboard displaying confirmed reservations and payment statuses.
-- **Automatic Inventory Management:** MySQL triggers automatically decrement available flight seats upon confirmation.
-
----
-
-## Project Structure
-
-```text
-SkyReserve
-├── .env.example             # Template for environment variables
-├── .gitignore               # Excluded files for git repository
-├── config.php               # Database connection configuration
-├── index.php                # Homepage & flight search widget
-├── flights.php              # Available flights listing & filter
-├── book.php                 # Flight reservation & payment form
-├── my_bookings.php          # User booking history dashboard
-├── login.php                # User sign-in page
-├── register.php             # New account registration page
-├── logout.php               # Session termination script
-├── style.css                # Custom CSS design system
-├── skyreserve.sql                # Complete database DDL & seed data
-│
-├── screenshots/             # Interface previews for GitHub documentation
-│   ├── home.png
-│   ├── login.png
-│   ├── register.png
-│   ├── flights.png
-│   └── book.png
-│
-└── README.md                # Project documentation
-```
+- **Flight Search:** Search live flight schedules by source and destination cities.
+- **User Authentication:** Account registration and secure login session management.
+- **Flight Booking & Payment:** Instant seat reservation with real-time seat inventory updates.
+- **My Bookings Dashboard:** View past booking details, ticket info, and payment statuses.
+- **Automated Inventory:** MySQL triggers automatically deduct available seat counts upon confirmation.
 
 ---
 
-## Interface Showcase
+## 📸 Interface Showcase
 
 ### 1. Landing Page
 ![Home Page](screenshots/home.png)
@@ -98,39 +74,7 @@ SkyReserve
 
 ---
 
-## Database Architecture & Design
-
-### Relational Schema Tables
-- **`users`** — User account records (`user_id`, `full_name`, `email`, `phone`, `password`).
-- **`flights`** — Flight schedules (`flight_id`, `flight_number`, `airline_name`, `source_city`, `destination_city`, `departure_time`, `arrival_time`, `available_seats`, `ticket_price`).
-- **`bookings`** — Passenger reservations (`booking_id`, `user_id`, `flight_id`, `booking_date`, `seats_booked`, `booking_status`).
-- **`payments`** — Transaction records (`payment_id`, `booking_id`, `payment_method`, `amount`, `payment_status`).
-
-### Advanced DBMS Features Implemented
-1. **Triggers:**
-   - `reduce_seats_after_booking` — Automatically deducts booked seats from `flights.available_seats` after a booking row is inserted.
-   - `prevent_negative_seats` — Enforces non-negative seat inventory prior to updating `flights`.
-2. **Stored Procedures & Functions:**
-   - `TotalFlights()` & `TotalRevenue()` — Deterministic aggregate metrics.
-   - `GetAllFlights()`, `GetAllUsers()`, `GetFlightsByAirline()` — Encapsulated query procedures.
-3. **Views:**
-   - `booking_details` & `flight_summary` — Simplifies reporting queries across joined entities.
-
----
-
-## Troubleshooting Common Issues
-
-1. **MySQL Access Denied Error:**
-   - Ensure your MySQL service is running in XAMPP.
-   - If your MySQL `root` account has a password, update `$password` in `config.php` or set `DB_PASS` in your environment.
-2. **Page Not Found (404):**
-   - Verify the project folder name matches `SkyReserve` inside `htdocs`.
-3. **Docker Port Conflict:**
-   - If port `8080` or `3306` is already in use, modify the host port mappings in `docker-compose.yml`.
-
----
-
-## Academic Information
+## 🎓 Academic Information
 
 - **Course:** Database Systems
 - **Institution:** BITS Pilani Dubai Campus
@@ -138,6 +82,6 @@ SkyReserve
 
 ---
 
-## License
+## 📄 License
 
 This project is open source and available for educational and academic purposes.
