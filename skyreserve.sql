@@ -13,7 +13,6 @@ CREATE TABLE `users` (
   `user_id` int NOT NULL AUTO_INCREMENT,
   `full_name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `phone` varchar(15) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `email` (`email`)
@@ -70,18 +69,18 @@ CREATE TABLE `payments` (
 -- ========================================================
 
 -- Insert sample users
-INSERT INTO `users` VALUES 
-(1,'Aarav Sharma','aarav.sharma@gmail.com','9876543201','pass123'),
-(2,'Priya Nair','priya.nair@gmail.com','9876543202','pass123'),
-(3,'Rahul Verma','rahul.verma@gmail.com','9876543203','pass123'),
-(4,'Ananya Menon','ananya.menon@gmail.com','9876543204','pass123'),
-(5,'Arjun Reddy','arjun.reddy@gmail.com','9876543205','pass123'),
-(6,'Sneha Kapoor','sneha.kapoor@gmail.com','9876543206','pass123'),
-(7,'Vikram Patel','vikram.patel@gmail.com','9876543207','pass123'),
-(8,'Meera Iyer','meera.iyer@gmail.com','9876543208','pass123'),
-(9,'Aditya Singh','aditya.singh@gmail.com','9876543209','pass123'),
-(10,'Diya Thomas','diya.thomas@gmail.com','9876543210','pass123'),
-(11,'Aisha Rahman','aisha.rahman@gmail.com','9876543210','Aisha123');
+INSERT INTO `users` (user_id, full_name, email, password) VALUES 
+(1,'Aarav Sharma','aarav.sharma@gmail.com','pass123'),
+(2,'Priya Nair','priya.nair@gmail.com','pass123'),
+(3,'Rahul Verma','rahul.verma@gmail.com','pass123'),
+(4,'Ananya Menon','ananya.menon@gmail.com','pass123'),
+(5,'Arjun Reddy','arjun.reddy@gmail.com','pass123'),
+(6,'Sneha Kapoor','sneha.kapoor@gmail.com','pass123'),
+(7,'Vikram Patel','vikram.patel@gmail.com','pass123'),
+(8,'Meera Iyer','meera.iyer@gmail.com','pass123'),
+(9,'Aditya Singh','aditya.singh@gmail.com','pass123'),
+(10,'Diya Thomas','diya.thomas@gmail.com','pass123'),
+(11,'Aisha Rahman','aisha.rahman@gmail.com','Aisha123');
 
 -- Insert sample flight schedules
 INSERT INTO `flights` VALUES 
