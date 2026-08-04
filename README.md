@@ -2,9 +2,9 @@
 
 A modern, full-stack database-driven airline booking application built with **PHP**, **MySQL**, and **Vanilla CSS**.
 
-**SkyReserve** is an academic project designed to simulate a real-world airline reservation system. The purpose of this project is to demonstrate how relational database concepts — such as triggers, foreign keys, and transaction integrity — can be applied to build a fully functional web application.
+**SkyReserve** is an academic project designed to simulate a real-world airline reservation system. The purpose of this project is to demonstrate how relational database concepts such as triggers, foreign keys, and transaction integrity can be applied to build a fully functional web application.
 
-The system allows users to **search for available flights**, **register and log in securely**, **book seats with real-time inventory updates**, and **view their booking history** — all driven by a structured MySQL backend. It was developed as part of a Database Systems course to bridge the gap between theoretical database design and practical web application development.
+The system allows users to **search for available flights**, **register and log in securely**, **book seats with real-time inventory updates**, and **view their booking history** all driven by a structured MySQL backend. It was developed as part of a Database Systems course to bridge the gap between theoretical database design and practical web application development.
 
 ---
 
