@@ -1,7 +1,7 @@
--- Flight Reservation System Database Schema
+-- SkyReserve Database Schema
 
-CREATE DATABASE IF NOT EXISTS `flight_reservation_system`;
-USE `flight_reservation_system`;
+CREATE DATABASE IF NOT EXISTS `skyreserve`;
+USE `skyreserve`;
 
 -- ========================================================
 -- 1. TABLE STRUCTURES

@@ -1,4 +1,4 @@
-# SkyReserve - Flight Reservation System
+# SkyReserve
 
 > A modern, full-stack database-driven web application for flight schedule management, real-time fare browsing, user authentication, and instant seat booking built with **PHP 8**, **MySQL 8**, and **Vanilla CSS**.
 
@@ -6,7 +6,7 @@
 
 ## Abstract
 
-The **SkyReserve Flight Reservation System** automates airline schedule management, user registration, seat availability tracking, and booking processing. Built on relational database principles, the project showcases core and advanced Database Systems (DBMS) features including:
+The **SkyReserve** system automates airline schedule management, user registration, seat availability tracking, and booking processing. Built on relational database principles, the project showcases core and advanced Database Systems (DBMS) features including:
 - **3NF Relational Database Schema**
 - **Automated MySQL Triggers** (real-time seat deduction & integrity checks)
 - **Database Views & Stored Procedures**
@@ -46,8 +46,8 @@ Open your browser and navigate to: **`http://localhost:8080`**
 ### Step 2: Database Setup
 1. Start **Apache** and **MySQL** in your XAMPP Control Panel.
 2. Open phpMyAdmin at `http://localhost/phpmyadmin`.
-3. Create a new database named **`flight_reservation_system`**.
-4. Click **Import** and select the **`flight_reservation_system.sql`** file from the project folder.
+3. Create a new database named **`skyreserve`**.
+4. Click **Import** and select the **`skyreserve.sql`** file from the project folder.
 
 ### Step 3: Environment Configuration (Optional)
 Copy `.env.example` to `.env` or configure database variables directly in `config.php`:
@@ -59,7 +59,7 @@ Default connection parameters in `config.php`:
 $host     = getenv('DB_HOST') ?: "localhost";
 $username = getenv('DB_USER') ?: "root";
 $password = getenv('DB_PASS') !== false ? getenv('DB_PASS') : "";
-$database = getenv('DB_NAME') ?: "flight_reservation_system";
+$database = getenv('DB_NAME') ?: "skyreserve";
 ```
 
 ### Step 4: Run Application
@@ -83,7 +83,7 @@ http://localhost/SkyReserve/
 ## Project Structure
 
 ```text
-Flight-Reservation-System
+SkyReserve
 ├── .env.example             # Template for environment variables
 ├── .gitignore               # Excluded files for git repository
 ├── Dockerfile               # Apache + PHP 8 container configuration
@@ -97,7 +97,7 @@ Flight-Reservation-System
 ├── register.php             # New account registration page
 ├── logout.php               # Session termination script
 ├── style.css                # Custom CSS design system
-├── flight_reservation_system.sql # Complete database DDL & seed data
+├── skyreserve.sql                # Complete database DDL & seed data
 │
 ├── screenshots/             # Interface previews for GitHub documentation
 │   ├── home.png
@@ -156,7 +156,7 @@ Flight-Reservation-System
    - Ensure your MySQL service is running in XAMPP.
    - If your MySQL `root` account has a password, update `$password` in `config.php` or set `DB_PASS` in your environment.
 2. **Page Not Found (404):**
-   - Verify the project folder name matches `Flight-Reservation-System` inside `htdocs`.
+   - Verify the project folder name matches `SkyReserve` inside `htdocs`.
 3. **Docker Port Conflict:**
    - If port `8080` or `3306` is already in use, modify the host port mappings in `docker-compose.yml`.
 
@@ -166,7 +166,7 @@ Flight-Reservation-System
 
 - **Course:** Database Systems
 - **Institution:** BITS Pilani Dubai Campus
-- **Project Title:** Flight Reservation System
+- **Project Title:** SkyReserve
 
 ---
 

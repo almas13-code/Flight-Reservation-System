@@ -28,7 +28,7 @@
     <div class="hero-content">
         <div class="hero-eyebrow">
             <span class="dot"></span>
-            Smart Flight Reservation System
+            SkyReserve
         </div>
 
         <h1 class="hero-title">
