@@ -4,7 +4,7 @@ A modern, full-stack database-driven airline booking application built with **PH
 
 ---
 
-## 📥 What to Download
+## What to Download
 
 Before running the project, make sure you have:
 1. **XAMPP** (includes Apache, PHP, and MySQL) — [Download XAMPP](https://www.apachefriends.org/)
@@ -12,7 +12,7 @@ Before running the project, make sure you have:
 
 ---
 
-## 🚀 Step-by-Step Setup Guide
+## Step-by-Step Setup Guide
 
 ### Step 1: Copy Project Folder
 Move or clone the **`SkyReserve`** project folder into your local XAMPP web server directory:
@@ -45,7 +45,7 @@ http://localhost/SkyReserve/
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **Flight Search:** Search live flight schedules by source and destination cities.
 - **User Authentication:** Account registration and secure login session management.
@@ -55,7 +55,7 @@ http://localhost/SkyReserve/
 
 ---
 
-## 📸 Interface Showcase
+## Interface Showcase
 
 ### 1. Landing Page
 ![Home Page](screenshots/home.png)
@@ -74,7 +74,7 @@ http://localhost/SkyReserve/
 
 ---
 
-## 🎓 Academic Information
+## Academic Information
 
 - **Course:** Database Systems
 - **Institution:** BITS Pilani Dubai Campus
@@ -82,6 +82,6 @@ http://localhost/SkyReserve/
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available for educational and academic purposes.
