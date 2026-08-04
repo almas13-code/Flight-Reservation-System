@@ -72,6 +72,12 @@ http://localhost/SkyReserve/
 
 ---
 
+## ER Diagram
+
+![SkyReserve ER Diagram](er_diagram.png)
+
+---
+
 ## Project Structure
 
 ```text
