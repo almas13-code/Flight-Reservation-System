@@ -28,12 +28,16 @@ Move or clone the **`SkyReserve`** project folder into your local XAMPP web serv
 
 ---
 
-### Step 3: Create & Import Database
-1. Open your web browser and go to: `http://localhost/phpmyadmin`
-2. Click **New** on the left menu and create a database named **`skyreserve`**.
-3. Select the **`skyreserve`** database.
-4. Click the **Import** tab at the top.
-5. Click **Choose File**, select **`skyreserve.sql`** from the project folder, and click **Import** (or **Go**).
+### Step 3: Open phpMyAdmin & Import Database SQL File
+1. In **XAMPP Control Panel**, click the **Admin** button next to **MySQL** (or open `http://localhost/phpmyadmin` in your browser).
+2. Click **Databases** at the top (or click **New** on the left sidebar).
+3. Under **Create database**, type the name: **`skyreserve`**
+4. Click the **Create** button.
+5. Click on the newly created **`skyreserve`** database in the left sidebar.
+6. Click the **Import** tab in the top navigation bar.
+7. Click **Choose File** (or **Browse**).
+8. Navigate to your project folder (`C:\xampp\htdocs\SkyReserve\`) and select **`skyreserve.sql`**.
+9. Scroll to the bottom and click **Import** (or **Go**).
 
 ---
 
