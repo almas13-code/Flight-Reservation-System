@@ -59,6 +59,35 @@ http://localhost/SkyReserve/
 
 ---
 
+## Project Structure
+
+```text
+SkyReserve
+├── .env.example             # Template for environment variables
+├── .gitignore               # Excluded files for git repository
+├── config.php               # Database connection configuration
+├── index.php                # Homepage & flight search widget
+├── flights.php              # Available flights listing & filter
+├── book.php                 # Flight reservation & payment form
+├── my_bookings.php          # User booking history dashboard
+├── login.php                # User sign-in page
+├── register.php             # New account registration page
+├── logout.php               # Session termination script
+├── style.css                # Custom CSS design system
+├── skyreserve.sql           # Complete database DDL & seed data
+│
+├── screenshots/             # Interface previews for documentation
+│   ├── home.png
+│   ├── login.png
+│   ├── register.png
+│   ├── flights.png
+│   └── book.png
+│
+└── README.md                # Project documentation
+```
+
+---
+
 ## Interface Showcase
 
 ### 1. Landing Page
