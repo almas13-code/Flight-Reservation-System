@@ -1,4 +1,4 @@
-# Flight Reservation System (SkyReserve)
+# SkyReserve - Flight Reservation System
 
 > A modern, full-stack database-driven web application for flight schedule management, real-time fare browsing, user authentication, and instant seat booking built with **PHP 8**, **MySQL 8**, and **Vanilla CSS**.
 
@@ -6,7 +6,7 @@
 
 ## Abstract
 
-The **Flight Reservation System** automates airline schedule management, user registration, seat availability tracking, and booking processing. Built on relational database principles, the project showcases core and advanced Database Systems (DBMS) features including:
+The **SkyReserve Flight Reservation System** automates airline schedule management, user registration, seat availability tracking, and booking processing. Built on relational database principles, the project showcases core and advanced Database Systems (DBMS) features including:
 - **3NF Relational Database Schema**
 - **Automated MySQL Triggers** (real-time seat deduction & integrity checks)
 - **Database Views & Stored Procedures**
@@ -21,8 +21,8 @@ No PHP installation, MySQL configuration, or manual imports required!
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/Flight-Reservation-System.git
-cd Flight-Reservation-System
+git clone https://github.com/almassiju36/SkyReserve.git
+cd SkyReserve
 
 # 2. Start application container
 docker-compose up -d
@@ -40,8 +40,8 @@ Open your browser and navigate to: **`http://localhost:8080`**
 
 ### Step 1: Local Setup & File Placement
 1. Clone or extract the project into your local server root:
-   - **XAMPP (Windows):** `C:\xampp\htdocs\Flight-Reservation-System`
-   - **XAMPP (macOS):** `/Applications/XAMPP/htdocs/Flight-Reservation-System`
+   - **XAMPP (Windows):** `C:\xampp\htdocs\SkyReserve`
+   - **XAMPP (macOS):** `/Applications/XAMPP/htdocs/SkyReserve`
 
 ### Step 2: Database Setup
 1. Start **Apache** and **MySQL** in your XAMPP Control Panel.
@@ -65,7 +65,7 @@ $database = getenv('DB_NAME') ?: "flight_reservation_system";
 ### Step 4: Run Application
 Open your browser and visit:
 ```text
-http://localhost/Flight-Reservation-System/
+http://localhost/SkyReserve/
 ```
 
 ---
