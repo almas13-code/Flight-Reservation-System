@@ -116,17 +116,17 @@ SkyReserve
 ### 1. Landing Page
 ![Home Page](screenshots/home.png)
 
-### 2. Available Flights List
-![Flight Listing](screenshots/flights.png)
-
-### 3. Flight Reservation & Payment
-![Book Flight](screenshots/book.png)
-
-### 4. Account Sign In
+### 2. Account Sign In
 ![Login Page](screenshots/login.png)
 
-### 5. Account Registration
+### 3. Account Registration
 ![Register Page](screenshots/register.png)
+
+### 4. Available Flights List
+![Flight Listing](screenshots/flights.png)
+
+### 5. Flight Reservation & Payment
+![Book Flight](screenshots/book.png)
 
 ---
 
