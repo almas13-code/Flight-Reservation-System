@@ -1,10 +1,10 @@
-# ✈️ Flight Reservation System (SkyReserve)
+# Flight Reservation System (SkyReserve)
 
 > A modern, full-stack database-driven web application for flight schedule management, real-time fare browsing, user authentication, and instant seat booking built with **PHP 8**, **MySQL 8**, and **Vanilla CSS**.
 
 ---
 
-## 📌 Abstract
+## Abstract
 
 The **Flight Reservation System** automates airline schedule management, user registration, seat availability tracking, and booking processing. Built on relational database principles, the project showcases core and advanced Database Systems (DBMS) features including:
 - **3NF Relational Database Schema**
@@ -15,7 +15,7 @@ The **Flight Reservation System** automates airline schedule management, user re
 
 ---
 
-## ⚡ Quick Start (Run in 1 Command with Docker)
+## Quick Start (Run in 1 Command with Docker)
 
 No PHP installation, MySQL configuration, or manual imports required!
 
@@ -32,7 +32,7 @@ Open your browser and navigate to: **`http://localhost:8080`**
 
 ---
 
-## 🛠️ Alternative Setup (XAMPP / Local Server)
+## Alternative Setup (XAMPP / Local Server)
 
 ### Prerequisites
 - **XAMPP / WAMP / MAMP** (PHP 7.4+ or PHP 8.x, MySQL 5.7+ or MySQL 8.x)
@@ -70,17 +70,17 @@ http://localhost/Flight-Reservation-System/
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-- **✈️ Flight Browsing & Filtering:** Filter live schedules by departure/arrival city with instant result counts.
-- **🔐 User Authentication:** Secure registration and login session management.
-- **🎟️ Instant Booking:** Real-time seat availability verification, dynamic price calculation, and payment method selection.
-- **📜 Booking History:** Interactive user dashboard displaying confirmed reservations and payment statuses.
-- **⚡ Automatic Inventory Management:** MySQL triggers automatically decrement available flight seats upon confirmation.
+- **Flight Browsing & Filtering:** Filter live schedules by departure/arrival city with instant result counts.
+- **User Authentication:** Secure registration and login session management.
+- **Instant Booking:** Real-time seat availability verification, dynamic price calculation, and payment method selection.
+- **Booking History:** Interactive user dashboard displaying confirmed reservations and payment statuses.
+- **Automatic Inventory Management:** MySQL triggers automatically decrement available flight seats upon confirmation.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Flight-Reservation-System
@@ -111,7 +111,7 @@ Flight-Reservation-System
 
 ---
 
-## 📸 Interface Showcase
+## Interface Showcase
 
 ### 1. Landing Page
 ![Home Page](screenshots/home.png)
@@ -130,7 +130,7 @@ Flight-Reservation-System
 
 ---
 
-## 🗄️ Database Architecture & Design
+## Database Architecture & Design
 
 ### Relational Schema Tables
 - **`users`** — User account records (`user_id`, `full_name`, `email`, `phone`, `password`).
@@ -150,7 +150,7 @@ Flight-Reservation-System
 
 ---
 
-## 🔧 Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
 1. **MySQL Access Denied Error:**
    - Ensure your MySQL service is running in XAMPP.
@@ -162,7 +162,7 @@ Flight-Reservation-System
 
 ---
 
-## 🎓 Academic Information
+## Academic Information
 
 - **Course:** Database Systems
 - **Institution:** BITS Pilani Dubai Campus
@@ -170,6 +170,6 @@ Flight-Reservation-System
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and available under the **MIT License**.
